@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>mical</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    @await Html.PartialAsync("_LayoutCssPartial")
+
+</head>
+<!-- body -->
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        @await Component.InvokeAsync("NavbarMenu")
+
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- wedo  section -->
+    <div class="wedo ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Ne Yapıyoruz</h2>
+                        <p>Uzun yolları kısaltan, cebinizi yakmayan yolculuklar sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="row">
+                        <div class="col-md-6 margin_bottom">
+                            <div class="work">
+                                <figure><img src="images/img1.png" alt="#" /></figure>
+                            </div>
+                            <div class="work_text">
+                                <h3>Arkadaş Bul<br><span class="blu">Yola Çık</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 margin_bottom">
+                            <div class="work">
+                                <figure><img src="images/img2.png" alt="#" /></figure>
+                            </div>
+                            <div class="work_text">
+                                <h3>Arkadaş Bul<br><span class="blu">Yola Çık</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 margin_bottom">
+                            <div class="work">
+                                <figure><img src="images/img3.png" alt="#" /></figure>
+                            </div>
+                            <div class="work_text">
+                                <h3>Arkadaş Bul<br><span class="blu">Yola Çık</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 margin_bottom">
+                            <div class="work">
+                                <figure><img src="images/img4.png" alt="#" /></figure>
+                            </div>
+                            <div class="work_text">
+                                <h3>Arkadaş Bul<br><span class="blu">Yola Çık</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="read_more" href="#">Daha Fazlası..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end wedo  section -->
+    <!--  footer -->
+@await Html.PartialAsync("_LayoutFooterPartial")
+
+    <!-- end footer -->
+    <!-- Javascript files-->
+@await Html.PartialAsync("_LayoutJsPartial")
+
+</body>
+</html>

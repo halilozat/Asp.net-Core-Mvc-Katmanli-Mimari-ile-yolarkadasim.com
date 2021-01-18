@@ -1,0 +1,311 @@
+﻿@model YolArkadasim.Mvc.Areas.Admin.Models.JourneyUpdateViewModel
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Yolculuk Düzenle";
+}
+<ol class="breadcrumb mb-3 mt-2">
+    <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a></li>
+    <li class="breadcrumb-item active"><a asp-area="Admin" asp-controller="Journey" asp-action="Index">Yolculuklar</a></li>
+    <li class="breadcrumb-item active"><a asp-area="Admin" asp-controller="Journey" asp-action="Update">Düzenle</a></li>
+</ol>
+<form asp-controller="Journey" asp-action="Add" method="post" enctype="multipart/form-data">
+    <div class="row mt-2">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" id="journeyTitle" class="form-control" placeholder="Yolculuk Başlığı" asp-for="Title" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="text-editor" asp-for="Content"></textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Temel Konfigürasyonlar
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="categoryList" asp-for="CategoryId"></label>
+                        <select id="categoryList" class="form-control" asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories,"Id","Name"))">
+                            <option></option>
+                        </select>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cityList" asp-for="JourneyStart"></label>
+                        <select id="cityList" class="form-control" asp-for="JourneyStart">
+                            <option></option>
+                            <option>Adana</option>
+                            <option>Adıyaman</option>
+                            <option>Afyon</option>
+                            <option>Ağrı</option>
+                            <option>Amasya</option>
+                            <option>Ankara</option>
+                            <option>Antalya</option>
+                            <option>Artvin</option>
+                            <option>Aydın</option>
+                            <option>Balıkesir</option>
+                            <option>Bilecik</option>
+                            <option>Bingöl</option>
+                            <option>Bitlis</option>
+                            <option>Bolu</option>
+                            <option>Burdur</option>
+                            <option>Bursa</option>
+                            <option>Çanakkale</option>
+                            <option>Çankırı</option>
+                            <option>Çorum</option>
+                            <option>Denizli</option>
+                            <option>Diyarbakır</option>
+                            <option>Edirne</option>
+                            <option>Elazığ</option>
+                            <option>Erzincan</option>
+                            <option>Erzurum</option>
+                            <option>Eskişehir</option>
+                            <option>Gaziantep</option>
+                            <option>Giresun</option>
+                            <option>Gümüşhane</option>
+                            <option>Hakkari</option>
+                            <option>Hatay</option>
+                            <option>Isparta</option>
+                            <option>Mersin</option>
+                            <option>İstanbul</option>
+                            <option>İzmir</option>
+                            <option>Kars</option>
+                            <option>Kastamonu</option>
+                            <option>Kayseri</option>
+                            <option>Kırklareli</option>
+                            <option>Kırşehir</option>
+                            <option>Kocaeli</option>
+                            <option>Konya</option>
+                            <option>Kütahya</option>
+                            <option>Malatya</option>
+                            <option>Manisa</option>
+                            <option>KahramanMaraş</option>
+                            <option>Mardin</option>
+                            <option>Muğla</option>
+                            <option>Muş</option>
+                            <option>Nevşehir</option>
+                            <option>Niğde</option>
+                            <option>Ordu</option>
+                            <option>Rize</option>
+                            <option>Sakarya</option>
+                            <option>Samsun</option>
+                            <option>Siirt</option>
+                            <option>Sinop</option>
+                            <option>Sivas</option>
+                            <option>Tekirdağ</option>
+                            <option>Tokat</option>
+                            <option>Trabzon</option>
+                            <option>Tunceli</option>
+                            <option>Şanlıurfa</option>
+                            <option>Uşak</option>
+                            <option>Van</option>
+                            <option>Yozgat</option>
+                            <option>Zonguldak</option>
+                            <option>Aksaray</option>
+                            <option>Bayburt</option>
+                            <option>Karaman</option>
+                            <option>Kırıkkale</option>
+                            <option>Batman</option>
+                            <option>Şırnak</option>
+                            <option>Bartın</option>
+                            <option>Ardağan</option>
+                            <option>Iğdır</option>
+                            <option>Yalova</option>
+                            <option>Karabük</option>
+                            <option>Kilis</option>
+                            <option>Osmaniye</option>
+                            <option>Düzce</option>
+                        </select>
+                        <span asp-validation-for="JourneyStart" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cityList2" asp-for="JourneyFinish"></label>
+                        <select id="cityList2" class="form-control" asp-for="JourneyFinish">
+                            <option></option>
+                            <option>Adana</option>
+                            <option>Adıyaman</option>
+                            <option>Afyon</option>
+                            <option>Ağrı</option>
+                            <option>Amasya</option>
+                            <option>Ankara</option>
+                            <option>Antalya</option>
+                            <option>Artvin</option>
+                            <option>Aydın</option>
+                            <option>Balıkesir</option>
+                            <option>Bilecik</option>
+                            <option>Bingöl</option>
+                            <option>Bitlis</option>
+                            <option>Bolu</option>
+                            <option>Burdur</option>
+                            <option>Bursa</option>
+                            <option>Çanakkale</option>
+                            <option>Çankırı</option>
+                            <option>Çorum</option>
+                            <option>Denizli</option>
+                            <option>Diyarbakır</option>
+                            <option>Edirne</option>
+                            <option>Elazığ</option>
+                            <option>Erzincan</option>
+                            <option>Erzurum</option>
+                            <option>Eskişehir</option>
+                            <option>Gaziantep</option>
+                            <option>Giresun</option>
+                            <option>Gümüşhane</option>
+                            <option>Hakkari</option>
+                            <option>Hatay</option>
+                            <option>Isparta</option>
+                            <option>Mersin</option>
+                            <option>İstanbul</option>
+                            <option>İzmir</option>
+                            <option>Kars</option>
+                            <option>Kastamonu</option>
+                            <option>Kayseri</option>
+                            <option>Kırklareli</option>
+                            <option>Kırşehir</option>
+                            <option>Kocaeli</option>
+                            <option>Konya</option>
+                            <option>Kütahya</option>
+                            <option>Malatya</option>
+                            <option>Manisa</option>
+                            <option>KahramanMaraş</option>
+                            <option>Mardin</option>
+                            <option>Muğla</option>
+                            <option>Muş</option>
+                            <option>Nevşehir</option>
+                            <option>Niğde</option>
+                            <option>Ordu</option>
+                            <option>Rize</option>
+                            <option>Sakarya</option>
+                            <option>Samsun</option>
+                            <option>Siirt</option>
+                            <option>Sinop</option>
+                            <option>Sivas</option>
+                            <option>Tekirdağ</option>
+                            <option>Tokat</option>
+                            <option>Trabzon</option>
+                            <option>Tunceli</option>
+                            <option>Şanlıurfa</option>
+                            <option>Uşak</option>
+                            <option>Van</option>
+                            <option>Yozgat</option>
+                            <option>Zonguldak</option>
+                            <option>Aksaray</option>
+                            <option>Bayburt</option>
+                            <option>Karaman</option>
+                            <option>Kırıkkale</option>
+                            <option>Batman</option>
+                            <option>Şırnak</option>
+                            <option>Bartın</option>
+                            <option>Ardağan</option>
+                            <option>Iğdır</option>
+                            <option>Yalova</option>
+                            <option>Karabük</option>
+                            <option>Kilis</option>
+                            <option>Osmaniye</option>
+                            <option>Düzce</option>
+                        </select>
+                        <span asp-validation-for="JourneyFinish" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="datepicker" asp-for="Date"></label>
+                        <input type="text" id="datepicker" class="form-control" value="@DateTime.Now.ToShortDateString()" asp-for="Date" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="thumbnailUpload" asp-for="ThumbnailFile"></label>
+                        <input type="file" id="thumbnailUpload" accept="image/*" class="form-control-file" asp-for="ThumbnailFile" />
+                        <span asp-validation-for="ThumbnailFile" class="text-danger"></span>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="isActive" class="form-check-input" asp-for="IsActive" />
+                        <label for="isActive" class="form-check-label" asp-for="IsActive"></label>
+                        <span asp-validation-for="IsActive" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block mt-4"><span class="fas fa-user-edit"></span> Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 mt-2">
+            <div class="card">
+                <div class="card-header">
+                    İletişim Bilgileri
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="seoWriter" asp-for="SeoAuthor"></label>
+                            <input type="text" id="seoWriter" class="form-control" asp-for="SeoAuthor" />
+                            <span asp-validation-for="SeoAuthor" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="priceList" asp-for="SeoTags"></label>
+                            <select id="priceList" class="form-control" asp-for="SeoTags">
+                                <option></option>
+                                <option>10 TL</option>
+                                <option>20 TL</option>
+                                <option>30 TL</option>
+                                <option>40 TL</option>
+                                <option>50 TL</option>
+                                <option>60 TL</option>
+                                <option>70 TL</option>
+                                <option>80 TL</option>
+                                <option>90 TL</option>
+                                <option>100 TL</option>
+                                <option>110 TL</option>
+                                <option>120 TL</option>
+                                <option>130 TL</option>
+                                <option>140 TL</option>
+                                <option>150 TL</option>
+                                <option>160 TL</option>
+                                <option>170 TL</option>
+                                <option>180 TL</option>
+                                <option>190 TL</option>
+                                <option>200 TL</option>
+                            </select>
+                            <span asp-validation-for="SeoTags" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="seoDescription" asp-for="SeoDescription"></label>
+                            <input id="seoDescription" class="form-control" asp-for="SeoDescription"></input>
+                            <span asp-validation-for="Date" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/trumbowyg.min.js" integrity="sha512-sffB9/tXFFTwradcJHhojkhmrCj0hWeaz8M05Aaap5/vlYBfLx5Y7woKi6y0NrqVNgben6OIANTGGlojPTQGEw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/langs/tr.min.js" integrity="sha512-+HGzdrYvtA0U9cp5kJad8OpjTvUi6ywZ9z9kXFGiV3EaAR1II5X6lfulUm6/F9GKesHW+jHFfAqwXK0juybvMw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/colors/trumbowyg.colors.min.js" integrity="sha512-iT7g30i1//3OBZsfoc5XmlULnKQKyxir582Z9fIFWI6+ohfrTdns118QYhCTt0d09aRGcE7IRvCFjw2wngaqRQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/emoji/trumbowyg.emoji.min.js" integrity="sha512-C1y8Ma4rukPZAgoB+9AWiKNMWXvWXGDygpcYuL/lM3YKUcZLUgFwF8brKYML73a5YeZ4y7hmY3604Tzx4f4k0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/fontfamily/trumbowyg.fontfamily.min.js" integrity="sha512-tDDpWlhruXFSzPin7PeSOo/ZklJv354ZUibgoTnthgO9lQUiNn4etCFGNwT4c3WUCZ1jWZgOVrXGMqiApe9sBg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/fontsize/trumbowyg.fontsize.min.js" integrity="sha512-DOJaq3OCe5hLSr73aQBMiJY4kc+L5UwessOl6g2oxyy7VDnZVWt+TgWVy2nh2ypf7bwoaxZmPnIMiRC5PNZecA==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+    <script src="~/AdminLTE/js/journeyAdd.js" type="application/ecmascript"></script>
+}
+@section Styles
+{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/ui/trumbowyg.min.css" integrity="sha512-iw/TO6rC/bRmSOiXlanoUCVdNrnJBCOufp2s3vhTPyP1Z0CtTSBNbEd5wIo8VJanpONGJSyPOZ5ZRjZ/ojmc7g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/colors/ui/trumbowyg.colors.min.css" integrity="sha512-8dXb2ITE13jLrqqGDVTU8kKl9vHZI9E4TpZGyfhevHeF+/cWWA17wVj+SKX3+QHqZISiGihaCOyK3nA152ShDg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/emoji/ui/trumbowyg.emoji.min.css" integrity="sha512-T2q2UM7Pm3t6Fu0VTRcuVMuaQf3/wP1aFi+/NyvpoVV0VBxN1Pqlmq57Jfg1IPRQCfFQOPLKBwoXA28+1gd/Ow==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.min.css" integrity="sha512-ug/p2fTnYRx/TfVgL8ejTWolaq93X+48/FLS9fKf7AiazbxHkSEENdzWkOxbjJO/X1grUPt9ERfBt21iLh2dxg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/theme.min.css" integrity="sha512-adRIgePtMQgAVB+Mfkhl+Nyva/WllWlFzJyyhYCjznU3Di+Z4SsYi1Rqsep11PYLpUsW/SjE4NXUkIjabQJCOQ==" crossorigin="anonymous" />
+    <link href="~/AdminLTE/css/select2-bootstrap4.min.css" rel="stylesheet" />
+}

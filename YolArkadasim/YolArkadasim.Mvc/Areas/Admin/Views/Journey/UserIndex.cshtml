@@ -1,0 +1,77 @@
+﻿@using YolArkadasim.Entities.Concrete
+@model YolArkadasim.Entities.Dtos.JourneyListDto
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Yolculuklar";
+}
+<ol class="breadcrumb mb-3 mt-2">
+    <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a></li>
+    <li class="breadcrumb-item active"><a asp-area="Admin" asp-controller="Journey" asp-action="UserIndex">Yolculuklar</a></li>
+</ol>
+<div class="row">
+    <div class="col-lg-6 offset-lg-3">
+        <div class="card-body">
+            <div class="form-group">
+                <a class="btn btn-warning btn-block mt-3" asp-area="" asp-controller="Home" asp-action="Index"><span class="fas fa-home"></span> Ana Sayfaya Dön</a>
+                <a class="btn btn-secondary btn-block " asp-area="Admin" asp-controller="Journey" asp-action="Add"><span class="fas fa-plus"></span> İlan Ver</a>
+            </div>
+            </div>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        İlanlar
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="journeysTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Kategori</th>
+                    <th>Başlangıç</th>
+                    <th>Bitiş</th>
+                    <th>Başlık</th>
+                    <th>Küçük Resim</th>
+                    <th>Tarih</th>
+                    <th>Fiyat</th>
+                    <th>İletişim</th>
+                    <th>Aktif Mi?</th>
+                        
+                </tr>
+                </thead>
+                
+                <tbody>
+                @foreach (var journey in Model.Journeys)
+                {
+                    <tr>
+                        <td>@journey.Id</td>
+                        <td>@journey.Category.Name</td>
+                        <td>@journey.JourneyStart</td>
+                        <td>@journey.JourneyFinish</td>
+                        <td>@journey.Title</td>
+                        <td><img src="~/img/@journey.Thumbnail" class="my-image-table" /></td>
+                        <td>@journey.Date.ToShortDateString()</td>
+                        <td>@journey.SeoTags</td>
+                        <td>@journey.SeoDescription</td>
+                        <td>@(journey.IsActive ? "Evet" : "Hayır")</td>
+                        
+                        @*<td>
+                            <a class="btn btn-primary btn-sm btn-update" data-id="@journey.Id" asp-area="Admin" asp-controller="Journey" asp-action="Update" asp-route-journeyId="@journey.Id"><span class="fas fa-edit"></span></a>
+                            <button class="btn btn-danger btn-sm btn-delete" data-id="@journey.Id"><span class="fas fa-minus-circle"></span></button>
+                        </td>*@
+                    </tr>}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+        <script src="~/AdminLTE/js/journeyUserIndex.js" type="application/ecmascript"></script>
+    }
+    @section Styles
+{
+
+    }

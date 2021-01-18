@@ -1,0 +1,17 @@
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Entities.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.csprojAssemblyReference.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.AssemblyInfoInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.AssemblyInfo.cs
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Data.deps.json
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Data.runtimeconfig.json
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Data.runtimeconfig.dev.json
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Data.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Data.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Entities.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.csproj.CoreCompileInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.csproj.CopyComplete
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Data\obj\Debug\netcoreapp3.1\YolArkadasim.Data.genruntimeconfig.cache

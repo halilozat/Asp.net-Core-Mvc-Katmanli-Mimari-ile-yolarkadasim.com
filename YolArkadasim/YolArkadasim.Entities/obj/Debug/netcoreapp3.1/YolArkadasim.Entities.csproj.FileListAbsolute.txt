@@ -1,0 +1,12 @@
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\bin\Debug\netcoreapp3.1\YolArkadasim.Entities.deps.json
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\bin\Debug\netcoreapp3.1\YolArkadasim.Entities.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\bin\Debug\netcoreapp3.1\YolArkadasim.Entities.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\obj\Debug\netcoreapp3.1\YolArkadasim.Entities.csprojAssemblyReference.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\obj\Debug\netcoreapp3.1\YolArkadasim.Entities.AssemblyInfoInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\obj\Debug\netcoreapp3.1\YolArkadasim.Entities.AssemblyInfo.cs
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\obj\Debug\netcoreapp3.1\YolArkadasim.Entities.csproj.CoreCompileInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\obj\Debug\netcoreapp3.1\YolArkadasim.Entities.csproj.CopyComplete
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\obj\Debug\netcoreapp3.1\YolArkadasim.Entities.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Entities\obj\Debug\netcoreapp3.1\YolArkadasim.Entities.pdb

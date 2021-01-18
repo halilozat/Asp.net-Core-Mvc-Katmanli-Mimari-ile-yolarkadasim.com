@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>mical</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    @await Html.PartialAsync("_LayoutCssPartial")
+
+</head>
+<!-- body -->
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        @await Component.InvokeAsync("NavbarMenu")
+
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!--  footer -->
+@await Html.PartialAsync("_LayoutFooterPartial")
+
+    <!-- end footer -->
+    <!-- Javascript files-->
+@await Html.PartialAsync("_LayoutJsPartial")
+
+</body>
+</html>

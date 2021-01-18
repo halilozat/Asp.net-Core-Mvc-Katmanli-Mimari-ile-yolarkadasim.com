@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>mical</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    @await Html.PartialAsync("_LayoutCssPartial")
+
+</head>
+<!-- body -->
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        @await Component.InvokeAsync("NavbarMenu")
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner -->
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Hakkımızda</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="about_img">
+                            <div class="about_box">
+                                <h3>Senin yolculuğun. Senin seçimin.</h3>
+                                <p>1. Yolculuk mu var?
+
+                                    Milyonlarca yolculuktan sana en yakın noktadan geçen kişileri anında bulabilirsin.
+
+                                    2. İletişime geç
+
+                                    Sana en uygun yolculuğu bulmak için tam adresini gir. Kiminle yolculuk etmek istediğini seç. Koltuğunu rezerve et!
+                                    1. Yolculuk mu var?
+
+                                    Milyonlarca yolculuktan sana en yakın noktadan geçen kişileri anında bulabilirsin.
+
+                                    2. İletişime geç
+
+                                    Sana en uygun yolculuğu bulmak için tam adresini gir. Kiminle yolculuk etmek istediğini seç. Koltuğunu rezerve et!
+                                    1. Yolculuk mu var?
+
+                                    Milyonlarca yolculuktan sana en yakın noktadan geçen kişileri anında bulabilirsin.
+
+                                    2. İletişime geç
+
+                                    Sana en uygun yolculuğu bulmak için tam adresini gir. Kiminle yolculuk etmek istediğini seç. Koltuğunu rezerve et!
+
+
+
+                                </p>
+                                <a class="read_more">Devamını Oku</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!--  footer -->
+    @await Html.PartialAsync("_LayoutFooterPartial")
+
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="~/js2/jquery.min.js"></script>
+    <script src="~/js2/popper.min.js"></script>
+    <script src="~/js2/bootstrap.bundle.min.js"></script>
+    <script src="~/js2/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="~/js2/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/js2/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Services.deps.json
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Services.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Services.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\obj\Debug\netcoreapp3.1\YolArkadasim.Services.csprojAssemblyReference.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\obj\Debug\netcoreapp3.1\YolArkadasim.Services.AssemblyInfoInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\obj\Debug\netcoreapp3.1\YolArkadasim.Services.AssemblyInfo.cs
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\obj\Debug\netcoreapp3.1\YolArkadasim.Services.csproj.CoreCompileInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\obj\Debug\netcoreapp3.1\YolArkadasim.Services.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\obj\Debug\netcoreapp3.1\YolArkadasim.Services.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Data.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Entities.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Data.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Entities.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Services\obj\Debug\netcoreapp3.1\YolArkadasim.Services.csproj.CopyComplete

@@ -1,0 +1,9 @@
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.deps.json
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\bin\Debug\netcoreapp3.1\YolArkadasim.Shared.pdb
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\obj\Debug\netcoreapp3.1\YolArkadasim.Shared.csprojAssemblyReference.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\obj\Debug\netcoreapp3.1\YolArkadasim.Shared.AssemblyInfoInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\obj\Debug\netcoreapp3.1\YolArkadasim.Shared.AssemblyInfo.cs
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\obj\Debug\netcoreapp3.1\YolArkadasim.Shared.csproj.CoreCompileInputs.cache
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\obj\Debug\netcoreapp3.1\YolArkadasim.Shared.dll
+C:\Users\halilozat\source\repos\YolArkadasim\YolArkadasim.Shared\obj\Debug\netcoreapp3.1\YolArkadasim.Shared.pdb
