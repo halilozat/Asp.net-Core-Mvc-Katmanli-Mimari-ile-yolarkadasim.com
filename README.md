@@ -1,4 +1,5 @@
 # Asp.net core MVC 5.0 ile kodlamış olduğum yolarkadasim aplikasyonum.
+Projenin Videosu : https://www.youtube.com/watch?v=Q2gZPl6sGqk&t=184s
 
 ![yolark-min](https://user-images.githubusercontent.com/57997190/120805075-0829a500-c54e-11eb-8997-29a861665210.png)
 
@@ -13,4 +14,3 @@
 ![profil düze](https://user-images.githubusercontent.com/57997190/120806082-188e4f80-c54f-11eb-9861-4bd290603b1b.png)
 
 
-Projenin Videosu : https://www.youtube.com/watch?v=Q2gZPl6sGqk&t=184s
